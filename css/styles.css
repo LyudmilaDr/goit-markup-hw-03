@@ -1,0 +1,266 @@
+:root {
+
+  /* Fonts*/
+ --main-font: 'Roboto', sans-serif;
+ --secondary-font: 'Raleway', sans-serif;
+
+    /* Text color*/
+  --primmaty-text-color: #212121;
+  --title-text-color: #ffffff;
+  --text-color: #757575;
+  --accent-color: #2196F3;
+
+  /* Backgroundcolor*/
+  --primmaty-bg-cl: #F5F5F5;
+  --accent-bg-cl: #2F303A;
+}
+
+.page {
+  font-family:var(--main-font);
+  font-size:16px;
+  color:var(--primmaty-text-color);
+}
+
+/* reset */
+.list {
+  text-decoration: none;
+  color: currentColor;
+  list-style: none;
+}
+/**
+  |============================
+  | Header
+  |============================
+*/
+
+.header {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  line-height: 1.14;
+  background-color:var(--title-text-color);
+
+} 
+.special {
+  color: var(--accent-color);
+}
+
+.logo {
+  font-family:var(--secondary-font);
+  text-decoration: none;
+ color:var(--primmaty-text-color);
+}
+
+.special,
+.logo {
+  font-family:var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.item {
+  color:var(--accent-color);
+  text-decoration: none;
+}
+.header-item {
+  font-size:14px;
+  color: var(--primmaty-text-color);
+  text-decoration: none;
+}
+
+.header-item:focus,
+.header-item:hover {
+  color:var(--accent-color);
+
+}
+
+.header-all {
+  color:var(--text-color);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.header-all:hover,
+.header-all:focus {
+  color:var(--accent-color );
+}
+
+/**
+  |============================
+  | Slogan
+  |============================
+*/
+.slogan {
+  background:var(--accent-bg-cl);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cnt {
+  font-size: 44px;
+  line-height:1.36;
+  color: var(--title-text-color);
+}
+
+.button {
+  color: var(--title-text-color);
+  background-color: #2196F3;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height:1.87;
+}
+
+.button:hover,
+.button:focus {
+  background-color:#188CE8;
+}
+/**
+  |============================
+  | About
+  |============================
+*/
+
+.visually-hidder {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0000);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.about-subtitle {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height:1.14;
+}
+.about-text {
+  font-size: 14px;
+  line-height:1.71;
+  color: var(--text-color);
+
+}
+/**
+  |============================
+  |Image
+  |============================
+*/
+
+.image-headline {
+  font-size: 36px;
+  line-height:1.16;
+  text-align: center;
+}
+/**
+  |============================
+  | Nero
+  |============================
+*/
+.nero {
+  background: #F5F4FA;
+}
+.nero-caption {
+  font-weight:700;
+  font-size: 36px;
+  line-height:1.16;
+  text-align:center;
+}
+.nero-title {
+font-weight:500;
+font-size:16px;
+line-height:1.18;
+}
+
+.nero-meta {
+ color:var(--text-color); 
+ font-weight:400; 
+}
+.nero-item {
+  font-weight:400;
+ }
+
+/**
+  |============================
+  | Portfolio
+  |============================
+*/
+.btn {
+  font-family: inherit;
+  font-weight:500;
+  font-size:16px;
+  line-height:1.62;
+  background-color:#F5F4FA ;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.btn:focus,
+.btn:hover {
+  background-color: var(--accent-color);
+  color:var(--title-text-color);
+}
+.main-btn {
+color: var(--primmaty-text-color);
+text-decoration: none;
+}
+.main-title {
+color: var(--primmaty-text-color);
+font-weight: 700;
+font-size: 18px;
+}
+.main-meta {
+  font-weight:400;
+font-size:16px;
+color: var(--text-color);
+}
+ .main-item {
+  text-decoration: none;
+ }
+/**
+  |============================
+  | Footer
+  |============================
+*/
+.footer {
+
+  font-size: 14px;
+  line-height:1.71;
+  font-weight: 400;
+  background-color:var(--accent-bg-cl);
+}
+
+.footer-logo {
+  font-family:var(--secondary-font);
+  font-weight:700;
+  font-size:26px;
+  line-height:1.19;
+  text-decoration: none;
+  color:var(--title-text-color);
+}
+
+.footer-type {
+  color: var(--title-text-color);
+  text-decoration: none;
+  font-style: normal;
+}
+
+
+.footer-all {
+  font-style: normal;
+  font-weight:400;
+  font-family:var(--main-font);
+  color:var(--text-color);
+  text-decoration: none;
+ }
+ .footer-type:hover,
+ .footer-type:focus {
+  color: #188CE8;
+}
+.footer-all:hover,
+.footer-all:focus {
+ color: #188CE8;
+}
