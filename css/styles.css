@@ -16,9 +16,27 @@
 }
 
 .page {
+  width: 1600px;
   font-family:var(--main-font);
   font-size:16px;
   color:var(--primmaty-text-color);
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /*outline:2px solid red;
+  outline-offset:-2px;*/
+}
+.section{
+  padding-top:94px;
+  padding-bottom:94px;
+
+  /*outline: 2px solid blueviolet;
+  outline-offset: -2px;*/
 }
 
 /* reset */
@@ -26,6 +44,18 @@
   text-decoration: none;
   color: currentColor;
   list-style: none;
+  margin:0;
+  padding:0;
+  display: flex;
+  flex-direction:row;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+margin:0;
 }
 /**
   |============================
@@ -35,17 +65,26 @@
 
 .header {
   margin: 0;
-  padding: 0;
+  padding-top: 32px;
+  padding-bottom:32px;
   font-weight: 500;
   line-height: 1.14;
   background-color:var(--title-text-color);
 
-} 
+  display: flex;
+  flex-direction: row;
+}
 .special {
   color: var(--accent-color);
 }
+.nav {
+display: flex;
+flex-direction: row;
+margin-right: 294px;
+}
 
 .logo {
+  margin-right :93px;
   font-family:var(--secondary-font);
   text-decoration: none;
  color:var(--primmaty-text-color);
@@ -58,14 +97,20 @@
   font-size: 26px;
   line-height: 1.19;
 }
+.all{
+margin-right:50px;
+}
 .item {
   color:var(--accent-color);
   text-decoration: none;
+  margin-right: 50px;
 }
 .header-item {
   font-size:14px;
   color: var(--primmaty-text-color);
   text-decoration: none;
+  margin-right: 50px;
+
 }
 
 .header-item:focus,
@@ -92,23 +137,32 @@
 */
 .slogan {
   background:var(--accent-bg-cl);
-  text-align: center;
   text-transform: uppercase;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
 .cnt {
   font-size: 44px;
   line-height:1.36;
   color: var(--title-text-color);
+  width:696px;
+ 
+
 }
 
 .button {
-  color: var(--title-text-color);
-  background-color: #2196F3;
-  cursor: pointer;
+  width:216px;
+  min-height: 40px;
+  padding:10px 32px;
   font-size: 16px;
   font-weight: 700;
   line-height:1.87;
+  color: var(--title-text-color);
+  background-color: #2196F3;
+  cursor: pointer;
 }
 
 .button:hover,
@@ -133,6 +187,10 @@
   clip-path: inset(50%);
   margin: -1px;
 }
+
+.about-item:not(:last-child) {
+margin-right:30px;
+}
 .about-subtitle {
   text-transform: uppercase;
   font-size: 14px;
@@ -154,6 +212,11 @@
   font-size: 36px;
   line-height:1.16;
   text-align: center;
+  margin-bottom: 50px;
+  
+}
+.image-img:not(:last-child) {
+  margin-right: 30px;
 }
 /**
   |============================
@@ -168,11 +231,18 @@
   font-size: 36px;
   line-height:1.16;
   text-align:center;
+  margin-bottom: 50px;
 }
 .nero-title {
 font-weight:500;
 font-size:16px;
 line-height:1.18;
+margin-top:30px;
+margin-left: auto;
+margin-bottom: 10px;
+margin-right: auto;
+
+
 }
 
 .nero-meta {
@@ -180,9 +250,13 @@ line-height:1.18;
  font-weight:400; 
 }
 .nero-item {
+  padding-bottom: 30px;
   font-weight:400;
+  background-color: var(--title-text-color);
  }
-
+.nero-item:not(:last-child) {
+  margin-right: 30px;
+}
 /**
   |============================
   | Portfolio
@@ -207,15 +281,34 @@ line-height:1.18;
 color: var(--primmaty-text-color);
 text-decoration: none;
 }
+.list-btn{
+ padding-left:313px;
+ padding-bottom: 50px;
+ padding-right: 312px; 
+ gap: 8px;
+}
+.main-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap:30px;
+}
 .main-title {
+  margin-top:20px;
+  margin-left: 24px;
+  margin-bottom: 4px;
+  margin-right: 24px;
 color: var(--primmaty-text-color);
 font-weight: 700;
 font-size: 18px;
+
 }
 .main-meta {
+  margin-left: 24px;
+  margin-bottom: 20px;
+  margin-right: 24px;
   font-weight:400;
-font-size:16px;
-color: var(--text-color);
+  font-size:16px;
+  color: var(--text-color);
 }
  .main-item {
   text-decoration: none;
@@ -226,7 +319,8 @@ color: var(--text-color);
   |============================
 */
 .footer {
-
+padding-top: 60px;
+padding-bottom: 60px;
   font-size: 14px;
   line-height:1.71;
   font-weight: 400;
@@ -240,7 +334,17 @@ color: var(--text-color);
   line-height:1.19;
   text-decoration: none;
   color:var(--title-text-color);
+  margin-bottom: 20px;
 }
+.footer-list {
+  display: flex;
+  flex-direction: column;
+
+}
+.footer-list:not(:last-child) {
+  margin-right: 9px;
+}
+
 
 .footer-type {
   color: var(--title-text-color);
