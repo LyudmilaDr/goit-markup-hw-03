@@ -328,8 +328,6 @@ font-size: 18px;
   |============================
 */
 .footer {
-padding-top: 60px;
-padding-bottom: 60px;
   font-size: 14px;
   line-height:1.71;
   font-weight: 400;
@@ -343,7 +341,9 @@ padding-bottom: 60px;
   line-height:1.19;
   text-decoration: none;
   color:var(--title-text-color);
-  margin-bottom: 20px;
+}
+.footer-link-type {
+margin-top: 20px;
 }
 .footer-list {
   display: flex;
@@ -352,10 +352,11 @@ padding-bottom: 60px;
   color: currentColor;
   list-style: none;
   padding-inline-start:0;
+  margin: 0;
 
 }
-.footer-list:not(:last-child) {
-  margin-right: 9px;
+.footer-link:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 
@@ -364,10 +365,6 @@ padding-bottom: 60px;
   text-decoration: none;
   font-style: normal;
 }
-.footer-link:not(:last-child) {
-  margin-right: 9px;
-} 
-
 
 .footer-all {
   font-style: normal;
