@@ -28,8 +28,8 @@
   margin-left: auto;
   margin-right: auto;
 
-  /*outline:2px solid red;
-  outline-offset:-2px;*/
+  outline:2px solid red;
+  outline-offset:-2px;
 }
 .section{
   padding-top:94px;
@@ -48,6 +48,7 @@
   padding:0;
   display: flex;
   flex-direction:row;
+  margin-left: auto;
 }
 
 h1,
@@ -65,22 +66,24 @@ margin:0;
 
 .header {
   margin: 0;
-  padding-top: 32px;
-  padding-bottom:32px;
   font-weight: 500;
   line-height: 1.14;
   background-color:var(--title-text-color);
-
-  display: flex;
-  flex-direction: row;
+ 
+}
+.header-nav {
+  padding-top: 32px;
+  padding-bottom: 32px;
+ display: flex;
+ align-items: center;
+ border-bottom:1px solid #ECECEC;
 }
 .special {
   color: var(--accent-color);
 }
 .nav {
 display: flex;
-flex-direction: row;
-margin-right: 294px;
+align-items: center;
 }
 
 .logo {
@@ -97,20 +100,21 @@ margin-right: 294px;
   font-size: 26px;
   line-height: 1.19;
 }
+.header-breadcrumbs:not(:last-child) { 
+  margin-right: 50px;
+}
+
 .all{
 margin-right:50px;
 }
 .item {
   color:var(--accent-color);
   text-decoration: none;
-  margin-right: 50px;
 }
 .header-item {
   font-size:14px;
   color: var(--primmaty-text-color);
   text-decoration: none;
-  margin-right: 50px;
-
 }
 
 .header-item:focus,
@@ -138,9 +142,7 @@ margin-right:50px;
 .slogan {
   background:var(--accent-bg-cl);
   text-transform: uppercase;
-   display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   
 }
 
@@ -149,7 +151,7 @@ margin-right:50px;
   line-height:1.36;
   color: var(--title-text-color);
   width:696px;
- 
+  margin: 0 auto 30px;
 
 }
 
@@ -163,6 +165,8 @@ margin-right:50px;
   color: var(--title-text-color);
   background-color: #2196F3;
   cursor: pointer;
+  margin: 0 auto;
+  display: block;
 }
 
 .button:hover,
@@ -195,6 +199,7 @@ margin-right:30px;
   text-transform: uppercase;
   font-size: 14px;
   line-height:1.14;
+  margin-bottom: 10px;
 }
 .about-text {
   font-size: 14px;
@@ -207,7 +212,9 @@ margin-right:30px;
   |Image
   |============================
 */
-
+.images {
+padding-bottom: 94px;
+}
 .image-headline {
   font-size: 36px;
   line-height:1.16;
@@ -253,6 +260,7 @@ margin-right: auto;
   padding-bottom: 30px;
   font-weight:400;
   background-color: var(--title-text-color);
+  text-align: center;
  }
 .nero-item:not(:last-child) {
   margin-right: 30px;
@@ -271,6 +279,8 @@ margin-right: auto;
   text-decoration: none;
   cursor: pointer;
   border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
 }
 .btn:focus,
 .btn:hover {
@@ -282,9 +292,8 @@ color: var(--primmaty-text-color);
 text-decoration: none;
 }
 .list-btn{
- padding-left:313px;
- padding-bottom: 50px;
- padding-right: 312px; 
+ padding-bottom: 50px; 
+ justify-content: center;
  gap: 8px;
 }
 .main-list {
@@ -292,20 +301,20 @@ text-decoration: none;
   flex-wrap: wrap;
   gap:30px;
 }
+.main-title-meta{
+padding: 24px 20px;
+border-right: 1px solid #EEEEEE;
+border-bottom: 1px solid #EEEEEE;
+border-left: 1px solid #EEEEEE;
+}
 .main-title {
-  margin-top:20px;
-  margin-left: 24px;
-  margin-bottom: 4px;
-  margin-right: 24px;
+margin-bottom: 4px;
 color: var(--primmaty-text-color);
 font-weight: 700;
 font-size: 18px;
 
 }
 .main-meta {
-  margin-left: 24px;
-  margin-bottom: 20px;
-  margin-right: 24px;
   font-weight:400;
   font-size:16px;
   color: var(--text-color);
@@ -339,6 +348,10 @@ padding-bottom: 60px;
 .footer-list {
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  color: currentColor;
+  list-style: none;
+  padding-inline-start:0;
 
 }
 .footer-list:not(:last-child) {
@@ -351,6 +364,9 @@ padding-bottom: 60px;
   text-decoration: none;
   font-style: normal;
 }
+.footer-link:not(:last-child) {
+  margin-right: 9px;
+} 
 
 
 .footer-all {

@@ -16,16 +16,16 @@
      <link rel="stylesheet" href="./css/styles.css"/>
     </head>
     <body class="page">
-      <div class="container">
         <!-- Header section -->
-        <header class="header section">
+        <header class="header">
+           <div class="container header-nav">
           <nav class="nav">
             <a lang="en" class="logo" href="">
               <span class="special"> Web</span>Studio</a>
               <ul class="list">
-                <li><a class="item" href="./index.html">Студія</a></li>
-                <li><a class="header-item" href="./portfolio.html"> Портфоліо</a></li>
-                <li><a class="header-item" href="">Контакти</a></li>
+                <li class="header-breadcrumbs"><a class="item" href="./index.html">Студія</a></li>
+                <li class="header-breadcrumbs"><a class="header-item" href="./portfolio.html"> Портфоліо</a></li>
+                <li class="header-breadcrumbs"><a class="header-item" href="">Контакти</a></li>
               </ul>
             </nav>
             <ul class="list">
@@ -38,15 +38,16 @@
                     +38 096 111 11 11</a>
                   </li>
                 </ul>
+                </div>
               </header>
               <main class="main">
                 <!--Slogan section -->
-                <section class="slogan section">
-                  <h1 class="cnt">Ефективні рішення для вашого бізнесу</h1>
+                <section class="slogan section container">
+                   <h1 class="cnt">Ефективні рішення для вашого бізнесу</h1>
                   <button class="button" type="button">Замовити послугу</button>
                 </section>
                 <!--About section -->
-                <section class="about section">
+                <section class="about section container">
                   <h2 class="visually-hidder">Особливості роботи нашої студії</h2>
                   <ul class="list">
                     <li class="about-item">
@@ -79,7 +80,7 @@
         </ul>
       </section>
       <!--Images section -->
-      <section class="images section">
+      <section class="images container">
         <h2 class="image-headline">Чим ми займаємося</h2>
 
         <ul class="list">
@@ -110,7 +111,7 @@
         </ul>
       </section>
        <!--Nero section -->
-      <section class="nero section">
+      <section class="nero section container">
         <h2 class="nero-caption">Наша команда</h2>
         <ul class="list">
           <li class="nero-item">
@@ -161,12 +162,12 @@
       </section>
     </main>
     <!--Footer section -->
-    <footer class="footer section">
+    <footer class="footer section container">
       <a lang="en"  class="footer-logo" href=""
         ><span class="special"> Web</span>Studio</a
       >
       <address>
-        <ul class="list footer-list">
+        <ul class="footer-list">
           <li  class="footer-link">
             <a class="footer-type"
               href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
