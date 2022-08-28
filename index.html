@@ -18,6 +18,7 @@
     <body class="page">
         <!-- Header section -->
         <header class="header">
+          <section class="section header-section">
            <div class="container header-nav">
           <nav class="nav">
             <a lang="en" class="logo" href="">
@@ -39,15 +40,19 @@
                   </li>
                 </ul>
                 </div>
-              </header>
+                </section>
+        </header>
               <main class="main">
                 <!--Slogan section -->
-                <section class="slogan section container">
-                   <h1 class="cnt">Ефективні рішення для вашого бізнесу</h1>
+                <section class="slogan section">
+                  <div class="container">
+                    <h1 class="cnt">Ефективні рішення для вашого бізнесу</h1>
                   <button class="button" type="button">Замовити послугу</button>
+                  </div>
                 </section>
                 <!--About section -->
-                <section class="about section container">
+                <section class="about section">
+                  <div class=" container">
                   <h2 class="visually-hidder">Особливості роботи нашої студії</h2>
                   <ul class="list">
                     <li class="about-item">
@@ -78,91 +83,101 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
       <!--Images section -->
-      <section class="images container">
+      <section class="images section">
+        <div class="container"> 
         <h2 class="image-headline">Чим ми займаємося</h2>
 
         <ul class="list">
-          <li class="image-img">
-            <img
+          <li class="image-item">
+            <img class="images-img"
               src="images/img(11).jpg"
               alt="Веб-програміст за роботою"
               width="370"
               height="295"
             />
           </li>
-          <li class="image-img">
-            <img
+          <li class="image-item">
+            <img class="images-img"
               src="images/img(12).jpg"
               alt="Розробник інтерфейсу за роботою"
               width="370"
               height="295"
             />
           </li>
-          <li class="image-img">
-            <img
+          <li class="image-item">
+            <img class="images-img"
               src="images/img(13).jpg"
               alt="Веб-дизайнер за роботою"
               width="370"
               height="295"
             />
           </li>
-        </ul>
+        </ul> </div>
       </section>
        <!--Nero section -->
-      <section class="nero section container">
+      <section class="nero section">
+        <div class="container">
         <h2 class="nero-caption">Наша команда</h2>
-        <ul class="list">
+        <ul class="list nero-list">
           <li class="nero-item">
             <!--Ігор Дем'яненко-->
-            <img
+            <img class="nero-img"
               src="images/img(4).jpg"
               alt="фото Ігора Дем'яненко"
               width="270"
               height="260"
             />
+            <div class="nero-title-meta">
             <h3 class="nero-title">Ігор Дем'яненко</h3>
             <p class="nero-meta" lang="en">Product Designer</p>
+            </div>
           </li>
           <li class="nero-item">
             <!--Ольга Рєпіна-->
-            <img
+            <img class="nero-img"
               src="images/img(5).jpg"
               alt="фото Ольги Рєпіної"
               width="270"
               height="260"
             />
+            <div class="nero-title-meta">
             <h3 class="nero-title">Ольга Рєпіна</h3>
-            <p  class="nero-meta" lang="en">Frontend Developer</p>
+            <p  class="nero-meta" lang="en">Frontend Developer</p></div>
           </li>
           <li class="nero-item">
             <!--Миколи Тарасова-->
-            <img
+            <img class="nero-img"
               src="images/img(6).jpg"
               alt="фото Микола Тарасов"
               width="270"
               height="260"
-            />
+            /><div class="nero-title-meta">
             <h3 class="nero-title">Микола Тарасов</h3>
             <p  class="nero-meta" lang="en">Marketing</p>
+            </div>
           </li>
           <li  class="nero-item">
             <!--Михайла Єрмакова-->
-            <img
+            <img class="nero-img"
               src="images/img(7).jpg"
               alt="фото Михайло Єрмаков"
               width="270"
               height="260"
             />
+            <div class="nero-title-meta">
             <h3 class="nero-title">Михайло Єрмаков</h3>
             <p  class="nero-meta" lang="en">UI Designer</p>
+            </div>
           </li>
-        </ul>
+        </ul> </div>
       </section>
-    </main>
+              </main>
     <!--Footer section -->
-    <footer class="footer section">
+    <footer class="footer">
+      <section class="section footer-section">
       <div class="container">
       <a lang="en"  class="footer-logo" href=""
         ><span class="special"> Web</span>Studio</a
@@ -191,6 +206,5 @@
         </ul>
       </address> </div>
     </footer>
-    </div>
   </body>
 </html>
