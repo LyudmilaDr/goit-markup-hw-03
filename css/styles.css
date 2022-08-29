@@ -46,8 +46,6 @@
   margin:0;
   padding:0;
   display: flex;
-  flex-direction:row;
-  margin-left: auto;
 }
 
 h1,
@@ -106,7 +104,7 @@ align-items: center;
   margin-right: 50px;
 }
 
-.all{
+.header-link:not(:last-child) {
 margin-right:50px;
 }
 .item {
@@ -123,6 +121,10 @@ margin-right:50px;
 .header-item:hover {
   color:var(--accent-color);
 
+}
+.header-list {
+  flex-direction: row;
+  margin-left: auto;
 }
 
 .header-all {
@@ -160,8 +162,6 @@ margin-right:50px;
 }
 
 .button {
-  width:216px;
-  min-height: 40px;
   padding:10px 32px;
   font-size: 16px;
   font-weight: 700;
@@ -171,6 +171,7 @@ margin-right:50px;
   cursor: pointer;
   margin: 0 auto;
   display: block;
+  border: none;
 }
 
 .button:hover,
@@ -268,7 +269,6 @@ padding-top: 30px;
 }
 
 .nero-item {
-  padding-bottom: 30px;
   font-weight:400;
   background-color: var(--title-text-color);
   text-align: center;
@@ -308,14 +308,14 @@ color: var(--primmaty-text-color);
 text-decoration: none;
 }
 .list-btn{
- padding-bottom: 50px; 
+ margin-bottom: 50px; 
  justify-content: center;
  gap: 8px;
 }
 .main-list {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 30px;
+  gap: 30px;
 }
 .main-title-meta{
 padding: 24px 20px;
@@ -338,12 +338,11 @@ font-size: 18px;
  .main-all {
   text-decoration: none;
  }
- .main-item {
-  flex-basis: calc((100%-60px)/3);
- }
+
  .main-img{
 display: block;
 max-width: 100%;
+height: auto;
  }
 /**
   |============================
@@ -374,8 +373,6 @@ max-width: 100%;
 margin-top: 20px;
 }
 .footer-list {
-  display: flex;
-  flex-direction: column;
   text-decoration: none;
   color: currentColor;
   list-style: none;
